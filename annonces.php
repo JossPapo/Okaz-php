@@ -18,12 +18,24 @@ $listings = getListings();
             <div>
                 <input type="text" name="search" id="search" class="form-control" placeholder="Rechercher">
             </div>
+            <div class="p-3 border-bottom">
+                <label for="price">Prix</label>
+                <div class="input-group">
+                    <input type="number" name="min-price" id="min_price" class="form-control" placeholder="Minimum">
+                    <span class="input-group-text">€</span>
+                </div>
+                <div class="input-group mt-2">
+                    <input type="number" name="min-price" id="min_price" class="form-control" placeholder="Maximum">
+                    <span class="input-group-text">€</span>
+                </div>
+            </div>
+
         </form>
     </div>
 
     <div class="col-md-9">
         <div class="row">
-            <?php foreach ($listings as $listing) {
+            <?php foreach ($listings as $key => $listing) {
                 require 'templates/listing_part.php';
             } ?>
         </div>

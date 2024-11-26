@@ -68,6 +68,7 @@
   --bs-nav-pills-link-active-color: #fff;
   --bs-nav-pills-link-active-bg: var(--primary);
 }
+
 .card-title {
   color: var(--primary);
 }
@@ -85,6 +86,7 @@ h1 {
 h2 {
   color: var(--secondary);
 }
+
 h3 {
   color: var(--primary);
 }
@@ -112,4 +114,12 @@ h3 {
 
 form i {
   color: var(--primary);
+}
+
+.form-signin {
+  max-width: 500px;
+}
+
+.form-listing {
+  max-width: 7OOpx;
 }
